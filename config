@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "spacing": 0,
+    "spacing": 2,
     "height": 34,
     "reload_style_on_change": true,
     "modules-left": [
@@ -21,7 +21,7 @@
         "on-click": "activate",
         "on-click-right": "fullscreen",
         "icon-theme": "WhiteSur",
-        "icon-size": 25,
+        "icon-size": 38,
         "tooltip-format": "{title}"
     },
     "hyprland/workspaces": {
