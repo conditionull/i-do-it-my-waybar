@@ -14,6 +14,7 @@
     "modules-right": [
         "tray",
         "memory",
+	"cpu",
         "wireplumber",
     ],
     "wlr/taskbar": {
@@ -44,8 +45,13 @@
     },
     "memory": {
         "interval": 5,
-        "format": "󰍛 {}%",
+        "format": " {}%",
         "max-length": 10
+    },
+    "cpu": {
+	"interval": 5,
+	"format": " {}%",
+	"max-length": 10
     },
     "tray": {
         "spacing": 10
