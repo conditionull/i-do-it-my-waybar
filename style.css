@@ -47,6 +47,7 @@ window#waybar.hidden {
 }
 
 #memory,
+#cpu,
 #clock,
 #wireplumber {
   border-radius: 8px;
@@ -64,7 +65,7 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
-#memory {
+#memory, #cpu {
   background-color: #1e1e2e;
 }
 
