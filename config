@@ -5,19 +5,23 @@
     "spacing": 2,
     "height": 34,
     "reload_style_on_change": true,
+    
     "modules-left": [
         "custom/logo",
         "hyprland/workspaces"
     ],
+
     "modules-center": [
         "clock"
     ],
+
     "modules-right": [
-        "tray",
-        "memory",
-	"cpu",
-        "wireplumber",
+      "tray",
+      "memory",
+	    "cpu",
+      "wireplumber",
     ],
+
     "wlr/taskbar": {
         "format": "{icon}",
         "on-click": "activate",
@@ -26,6 +30,7 @@
         "icon-size": 38,
         "tooltip-format": "{title}"
     },
+
     "hyprland/workspaces": {
     	"all-outputs": false,
         "on-click": "activate",
@@ -44,40 +49,50 @@
         },
         "persistent-workspaces": {}
     },
+
     "memory": {
         "interval": 5,
         "format": " {}%",
         "max-length": 10
     },
+
     "cpu": {
-	"interval": 5,
-	"format": " {}%",
-	"max-length": 10
+	    "interval": 5,
+	    "format": " {}%",
+	    "max-length": 10
     },
+    
     "tray": {
-        "spacing": 10
+        "icon-size": 20,
+        "spacing": 10,
+        "icons": {
+          "TelegramDesktop": "/usr/share/icons/hicolor/48x48/apps/org.telegram.desktop.png",
+          "discord": "/usr/share/icons/Papirus/64x64/apps/discord.svg"
+        },
     },
+    
     "clock": {
     	"format": "{:%I:%M %p}",
-        "tooltip-format": "{:%H:%M}",
-        "format-alt": "  {:%a, %d %b %Y}",
+      "tooltip-format": "{:%H:%M}",
+      "format-alt": "{:%a, %d %b %Y}",
     },
+    
     "wireplumber": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "󰂰",
-        "nospacing": 1,
-        "tooltip-format": "Volume : {volume}%",
-        "format-muted": "󰝟",
-        "format-icons": {
-            "headphone": "",
-            "default": ["󰖀","󰕾",""]
-        },
-        "on-click": "pamixer -t",
-        "scroll-step": 1
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "󰂰",
+      "nospacing": 1,
+      "format-muted": "󰝟",
+      "format-icons": {
+          "headphone": "",
+          "default": ["󰖀","󰕾",""]
+      },
+      "on-click": "pavucontrol",
+      "scroll-step": 1
     },
+    
     "custom/logo": {
-        "format": "  ",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "vicinae toggle",
     },
 }
