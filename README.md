@@ -1,3 +1,5 @@
+(styles not up to date in videos)
+
 <img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/70c43312-c9a6-4213-b667-dac8de460191" />
 
 
