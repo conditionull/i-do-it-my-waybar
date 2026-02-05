@@ -1,98 +1,99 @@
 {
-    "layer": "top",
-    "exclusive": true,
-    "position": "top",
-    "spacing": 2,
-    "height": 34,
-    "reload_style_on_change": true,
-    
-    "modules-left": [
-        "custom/logo",
-        "hyprland/workspaces"
-    ],
-
-    "modules-center": [
-        "clock"
-    ],
-
-    "modules-right": [
-      "tray",
-      "memory",
-	    "cpu",
-      "wireplumber",
-    ],
-
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-click-right": "fullscreen",
-        "icon-theme": "WhiteSur",
-        "icon-size": 38,
-        "tooltip-format": "{title}"
+  "layer": "top",
+  "exclusive": true,
+  "position": "top",
+  "spacing": 2,
+  "height": 34,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "custom/logo",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/recording_status",
+    "tray",
+    "memory",
+    "cpu",
+    "wireplumber"
+  ],
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-click-right": "fullscreen",
+    "icon-theme": "WhiteSur",
+    "icon-size": 38,
+    "tooltip-format": "{title}"
+  },
+  "hyprland/workspaces": {
+    "all-outputs": false,
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
     },
-
-    "hyprland/workspaces": {
-    	"all-outputs": false,
-        "on-click": "activate",
-        "format": "{icon}",
-        "format-icons": {
-            "default": "",
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9"
-        },
-        "persistent-workspaces": {}
+    "persistent-workspaces": {}
+  },
+  "memory": {
+    "interval": 5,
+    "format": " {}%",
+    "max-length": 10
+  },
+  "cpu": {
+    "interval": 5,
+    "format": " {}%",
+    "max-length": 10
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+    "icons": {
+      "TelegramDesktop": "/usr/share/icons/hicolor/48x48/apps/org.telegram.desktop.png",
+      "discord": "/usr/share/icons/Papirus/64x64/apps/discord.svg"
+    }
+  },
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "{:%H:%M}",
+    "format-alt": "{:%a, %d %b %Y}"
+  },
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "󰂰",
+    "nospacing": 1,
+    "format-muted": "󰝟",
+    "format-icons": {
+      "headphone": "",
+      "default": [
+        "󰖀",
+        "󰕾",
+        ""
+      ]
     },
-
-    "memory": {
-        "interval": 5,
-        "format": " {}%",
-        "max-length": 10
-    },
-
-    "cpu": {
-	    "interval": 5,
-	    "format": " {}%",
-	    "max-length": 10
-    },
-    
-    "tray": {
-        "icon-size": 20,
-        "spacing": 10,
-        "icons": {
-          "TelegramDesktop": "/usr/share/icons/hicolor/48x48/apps/org.telegram.desktop.png",
-          "discord": "/usr/share/icons/Papirus/64x64/apps/discord.svg"
-        },
-    },
-    
-    "clock": {
-    	"format": "{:%I:%M %p}",
-      "tooltip-format": "{:%H:%M}",
-      "format-alt": "{:%a, %d %b %Y}",
-    },
-    
-    "wireplumber": {
-      "format": "{icon} {volume}%",
-      "format-bluetooth": "󰂰",
-      "nospacing": 1,
-      "format-muted": "󰝟",
-      "format-icons": {
-          "headphone": "",
-          "default": ["󰖀","󰕾",""]
-      },
-      "on-click": "pavucontrol",
-      "scroll-step": 1
-    },
-    
-    "custom/logo": {
-      "format": "  ",
-      "tooltip": false,
-      "on-click": "vicinae toggle",
-    },
+    "on-click": "pavucontrol",
+    "scroll-step": 1
+  },
+  "custom/logo": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "vicinae toggle"
+  },
+  "custom/recording_status": {
+    "exec": "/home/doccia/workspace/github/screen-rec-selector/recording_status.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{text}",
+    "tooltip-format": " End recording: SUPER+SHIFT+R "
+  }
 }

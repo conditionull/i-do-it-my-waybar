@@ -57,6 +57,17 @@ window#waybar.hidden {
   background-color: #1e1e2e;
   min-width: 50px; /* may need adjustment if adding additional modules */
 }
+
+#custom-recording_status {
+  border-radius: 8px;
+  margin: 4px 4px;
+  padding: 6px 10px;
+  color: #ff5555;
+  background-color: #1e1e2e;
+  font-weight: 600;
+  font-size: 12.5px;
+}
+
 #cpu {
   margin-left: -2px;
   margin-right: -2px
@@ -66,6 +77,7 @@ window#waybar.hidden {
 #memory {
   border-radius: 8px 0px 0px 8px;
 }
+
 #wireplumber {
   border-radius: 0px 8px 8px 0px;
   margin-right: 4px;
