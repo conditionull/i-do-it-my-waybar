@@ -19,6 +19,7 @@ window#waybar.hidden {
 
 #workspaces {
   background-color: transparent;
+  margin-left: 2px;
 }
 
 #workspaces button {
@@ -28,9 +29,9 @@ window#waybar.hidden {
   /* Fix weird spacing in materia (waybar #450) */
   box-shadow: inset 0 -3px transparent;
   /* Use box-shadow instead of border so the text isn't offset */
-  padding: 4px 15px;
+  padding: 4px 14px;
   margin: 6px 3px;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #1e1e2e;
   color: #cdd6f4;
 }
@@ -75,11 +76,11 @@ window#waybar.hidden {
 
 /* overrides radius set above for raounded seamless bar illusion */
 #memory {
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #wireplumber {
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 10px 10px 0px;
   margin-right: 4px;
   margin-left: -4px; /* needed to hide gap (omega scuffed) */
 }
@@ -99,7 +100,7 @@ window#waybar.hidden {
 
 #clock {
   background-color: #1e1e2e;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 6px 10px;
   margin: 4px;
 }
