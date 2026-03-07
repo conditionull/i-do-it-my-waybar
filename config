@@ -6,7 +6,6 @@
   "height": 34,
   "reload_style_on_change": true,
   "modules-left": [
-    "custom/logo",
     "hyprland/workspaces"
   ],
   "modules-center": [
