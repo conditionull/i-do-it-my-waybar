@@ -33,7 +33,7 @@ window#waybar.hidden {
   margin: 6px 3px;
   border-radius: 0px 10px;
   background-color: #1e1e2e;
-  color: #cdd6f4;
+  color: #e5f7fc;
 }
 
 #workspaces button.active {
@@ -44,7 +44,7 @@ window#waybar.hidden {
   box-shadow: inherit;
   text-shadow: inherit;
   color: #1e1e2e;
-  background-color: #cdd6f4;
+  background-color: #e5f7fc;
 }
 
 #cpu,
@@ -54,7 +54,7 @@ window#waybar.hidden {
   border-radius: 0px;
   margin: 4px 0px;
   padding: 6px 10px;
-  color: #cdd6f4;
+  color: #e5f7fc;
   background-color: #1e1e2e;
   min-width: 50px; /* may need adjustment if adding additional modules */
 }
