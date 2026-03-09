@@ -19,16 +19,15 @@ window#waybar.hidden {
 
 #workspaces {
   background-color: transparent;
-  margin-left: 2px;
 }
 
 #workspaces button {
   min-width: 0;
-  padding: 4px 14px;
-  margin: 6px 3px;
-  border-radius: 12px;
-  background-color: #1e1e2e;
-  color: #e5f7fc;
+  padding: 6px 8px;
+  margin: 4px 0px;
+  border-radius: 0px;
+  background-color: #1c1d2d;
+  color: #737373;
 }
 
 #workspaces button.active {
@@ -38,21 +37,20 @@ window#waybar.hidden {
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #1e1e2e;
-  background-color: #e5f7fc;
+  color: #e5f7fc;
+  background-color: #1c1d2d;
 }
 
 #cpu,
 #wireplumber,
-#backlight,
+#custom-backlight,
 #memory,
 #tray {
   border-radius: 0px;
   margin: 4px 0px;
   padding: 6px 10px;
   color: #e5f7fc;
-  background-color: #1e1e2e;
-  min-width: 50px; /* may need adjustment if adding additional modules */
+  background-color: #1c1d2d;
 }
 
 #custom-recording_status {
@@ -60,47 +58,27 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #ff5555;
-  background-color: #1e1e2e;
+  background-color: #1c1d2d;
   font-weight: 600;
   font-size: 12.5px;
 }
 
-#cpu {
-  margin-left: -2px;
-  margin-right: -2px
-}
-
-/* overrides radius set above for raounded seamless bar illusion */
-#memory {
-  border-radius: 12px 0px 0px 12px;
-}
-
 #wireplumber {
-  border-radius: 0px 12px 12px 0px;
-  margin-right: 4px;
-  margin-left: -4px; /* needed to hide gap (omega scuffed) */
-}
-
-#custom-logo {
-  padding-right: 7px;
-  padding-left: 7px;
-  margin-left: 5px;
-  font-size: 15.5px;
-  border-radius: 8px 0px 0px 8px;
-  color: #bd6ade;
+  border-radius: 0px 16px 16px 0px;
+  padding: 6px 15px 6px 10px;
 }
 
 #clock {
-  background-color: #1e1e2e;
-  border-radius: 12px;
-  padding: 6px 13px;
-  margin: 4px;
+  background-color: #1c1d2d;
+  border-radius: 16px 0px 0px 16px;
+  padding: 6px 10px 6px 15px;
+  margin: 4px 0px;
   font-family: "FreeMono";
   font-size: 14px;
 }
 
 tooltip, tooltip label {
   padding: 0px;
-  background-color: #1e1e2e;
+  background-color: #1c1d2d;
 }
 
