@@ -75,6 +75,7 @@ window#waybar.hidden {
   margin: 4px 0px;
   font-family: "FreeMono";
   font-size: 14px;
+  color: #e5f7fc;
 }
 
 tooltip, tooltip label {
