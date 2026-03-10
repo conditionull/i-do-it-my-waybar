@@ -11,5 +11,11 @@ https://github.com/user-attachments/assets/9462c595-746c-4f70-b053-d409477041c3
 
 Waybar Layout Selector: (( update the paths in scripts/waybar-selector.sh to match your system ))
 
+> [!TIP] 
+hyprland bind + windowrule recommeneded for waybar-selector tool:<br />
+`windowrule = match:initial_class waybar-selector, float on, center on, size 460 140`<br />
+`bind = $mainMod SHIFT, B, exec, ~/.config/waybar/scripts/waybar-selector.sh`
+
+
 https://github.com/user-attachments/assets/afc11809-f3f7-4d36-88f9-8c212453279d
 
