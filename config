@@ -62,7 +62,7 @@
     }
   },
   "clock": {
-    "format": "{:%I:%M %p}",
+    "format": "{:%I:%M}",
     "tooltip-format": "{:%H:%M}",
     "format-alt": "{:%a, %d %b %Y}"
   },
