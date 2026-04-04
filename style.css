@@ -1,6 +1,5 @@
 * {
   border: none;
-  border-radius: 8px;
   min-height: 0;
   font-family: FiraCode Nerd Font;
   font-size: 12.5px;
@@ -26,8 +25,8 @@ window#waybar.hidden {
   min-width: 0;
   padding: 4px 14px;
   margin: 6px 3px;
-  border-radius: 12px;
-  background-color: #1e1e2e;
+  border-radius: 10px;
+  background-color: rgba(28, 29, 45, 0.91); 
   color: #e5f7fc;
 }
 
@@ -51,7 +50,7 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #e5f7fc;
-  background-color: #1e1e2e;
+  background-color: rgba(28, 29, 45, 0.91); 
   min-width: 50px; /* may need adjustment if adding additional modules */
 }
 
@@ -60,7 +59,7 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #ff5555;
-  background-color: #1e1e2e;
+  background-color: rgba(28, 29, 45, 0.91); 
   font-weight: 600;
   font-size: 12.5px;
 }
@@ -91,7 +90,7 @@ window#waybar.hidden {
 }
 
 #clock {
-  background-color: #1e1e2e;
+  background-color: rgba(28, 29, 45, 0.91); 
   border-radius: 12px;
   padding: 6px 13px;
   margin: 4px;
@@ -102,6 +101,6 @@ window#waybar.hidden {
 
 tooltip, tooltip label {
   padding: 0px;
-  background-color: #1e1e2e;
+  background-color: rgba(28, 29, 45, 0.91); 
 }
 

@@ -26,7 +26,7 @@ window#waybar.hidden {
   padding: 6px 8px;
   margin: 4px 0px;
   border-radius: 0px;
-  background-color: #1c1d2d;
+  background-color: rgba(28, 29, 45, 0.91);
   color: #737373;
 }
 
@@ -38,7 +38,7 @@ window#waybar.hidden {
   box-shadow: inherit;
   text-shadow: inherit;
   color: #e5f7fc;
-  background-color: #1c1d2d;
+  background-color: rgba(28, 29, 45, 0.91);
 }
 
 #cpu,
@@ -50,7 +50,7 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #e5f7fc;
-  background-color: #1c1d2d;
+  background-color: rgba(28, 29, 45, 0.91);
 }
 
 #custom-recording_status {
@@ -58,19 +58,19 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #ff5555;
-  background-color: #1c1d2d;
+  background-color: rgba(28, 29, 45, 0.91);
   font-weight: 600;
   font-size: 12.5px;
 }
 
 #wireplumber {
-  border-radius: 0px 16px 16px 0px;
+  border-radius: 0px 12px 12px 0px;
   padding: 6px 15px 6px 10px;
 }
 
 #clock {
-  background-color: #1c1d2d;
-  border-radius: 16px 0px 0px 16px;
+  background-color: rgba(28, 29, 45, 0.91);
+  border-radius: 12px 0px 0px 12px;
   padding: 6px 10px 6px 15px;
   margin: 4px 0px;
   font-family: "FreeMono";
@@ -80,6 +80,6 @@ window#waybar.hidden {
 
 tooltip, tooltip label {
   padding: 0px;
-  background-color: #1c1d2d;
+  background-color: rgba(28, 29, 45, 0.91);
 }
 
