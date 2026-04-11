@@ -12,7 +12,7 @@
     "tray",
     "memory",
     "cpu",
-    "wireplumber",
+    "wireplumber"
   ],
   "wlr/taskbar": {
     "format": "{icon}",
@@ -76,7 +76,7 @@
       ]
     },
     "on-click": "pavucontrol",
-    "scroll-step": 1
+    "scroll-step": 2
   },
   "custom/logo": {
     "format": "  ",
@@ -89,5 +89,5 @@
     "return-type": "json",
     "format": "{text}",
     "tooltip-format": " End recording: SUPER+SHIFT+R "
-  },
+  }
 }
