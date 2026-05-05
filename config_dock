@@ -7,6 +7,7 @@
   "reload_style_on_change": true,
   "modules-center": [
     "clock",
+    "mpris",
     "hyprland/workspaces",
     "custom/recording_status",
     "tray",
@@ -53,9 +54,7 @@
   "tray": {
     "icon-size": 18,
     "spacing": 10,
-    "icons": {
-      "discord": "/usr/share/icons/Papirus/64x64/apps/discord.svg"
-    }
+    "icons": {}
   },
   "clock": {
     "format": "{:%I:%M}",
@@ -78,10 +77,24 @@
     "on-click": "pavucontrol",
     "scroll-step": 2
   },
-  "custom/logo": {
-    "format": "  ",
-    "tooltip": false,
-    "on-click": "vicinae toggle"
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{status_icon} {title}",
+    "tooltip-format": "{dynamic}",
+    "player-icons": {
+      "default": "",
+    },
+    "status-icons": {
+      "paused": ""
+    },
+    "player": "spotify",
+    "interval": 1,
+    "max-length": 40,
+    "on-click": "playerctl -p spotify previous",
+    "on-click-right": "playerctl -p spotify next",
+    "on-click-middle": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify volume 0.01+",
+    "on-scroll-down": "playerctl -p spotify volume 0.01-"
   },
   "custom/recording_status": {
     "exec": "recording_status.sh",
