@@ -1,6 +1,10 @@
 Latest design (Dock Layout):
 <img width="1354" height="500" alt="image" src="https://github.com/user-attachments/assets/81aa56ed-7f9c-4377-a9bb-afa633990848" />
 
+Spotify module (left click - previous song)  •  (middle click - pause/play)  •  (right click - next):
+<img width="581" height="96" alt="2026-05-05_08-19-01" src="https://github.com/user-attachments/assets/537a929b-8df3-4dd6-942a-a5ed04dce89a" />
+
+
 Latest design (Full Bar Layout):
 <img width="1919" height="498" alt="image" src="https://github.com/user-attachments/assets/5100a2a5-fcf7-44cb-8222-1696437e47cb" />
 
