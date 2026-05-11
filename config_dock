@@ -75,7 +75,7 @@
       ]
     },
     "on-click": "pavucontrol",
-    "scroll-step": 2
+    "scroll-step": 1
   },
   "mpris": {
     "format": "{player_icon} {title}",
