@@ -14,11 +14,12 @@ if [ -s "$TMP_SELECTION" ]; then
     case "$choice" in
         'Dock')
             pkill -x waybar
-            setsid waybar -c ~/.config/waybar/config_dock -s ~/.config/waybar/dock.css >/dev/null 2>&1 &
+            setsid waybar -c ~/.config/waybar/config_dock.jsonc -s ~/.config/waybar/dock.css >/dev/null 2>&1 &
             ;;
         'Full Bar')
             pkill -x waybar
-            setsid waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css >/dev/null 2>&1 &
+            setsid waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css >/dev/null 2>&1 &
             ;;
     esac
 fi
+

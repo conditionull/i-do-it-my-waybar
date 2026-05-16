@@ -18,16 +18,30 @@ window#waybar.hidden {
 
 #workspaces {
   background-color: transparent;
-  margin-left: 2px;
+  margin-left:8px;
+  padding: 0px;
 }
 
 #workspaces button {
-  min-width: 0;
-  padding: 4px 14px;
-  margin: 6px 3px;
-  border-radius: 10px;
-  background-color: rgba(28, 29, 45, 0.94); 
+  padding: 0px 6px;
+  margin: 4px 0px;
+  border-radius: 0px;
+  background-color: rgba(28, 29, 45, 0.80);
   color: #e5f7fc;
+}
+
+#workspaces button:first-child {
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 12px;
+}
+
+#workspaces button:last-child {
+  border-radius: 0px 8px 8px 0px;
+  padding-right: 12px;
+}
+
+#workspaces button:only-child {
+  border-radius: 8px;
 }
 
 #workspaces button.active {
@@ -37,8 +51,8 @@ window#waybar.hidden {
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #1e1e2e;
-  background-color: #e5f7fc;
+  color: #fff;
+  background-color: rgba(38, 39, 59, 0.8);
 }
 
 #cpu,
@@ -50,7 +64,7 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #e5f7fc;
-  background-color: rgba(28, 29, 45, 0.94); 
+  background-color: rgba(28, 29, 45, 0.80);
   min-width: 50px; /* may need adjustment if adding additional modules */
 }
 
@@ -59,25 +73,19 @@ window#waybar.hidden {
   margin: 4px 0px;
   padding: 6px 10px;
   color: #ff5555;
-  background-color: rgba(28, 29, 45, 0.94); 
+  background-color: rgba(28, 29, 45, 0.80);
   font-weight: 600;
   font-size: 12.5px;
 }
 
-#cpu {
-  margin-left: -2px;
-  margin-right: -2px
-}
-
 /* overrides radius set above for raounded seamless bar illusion */
 #memory {
-  border-radius: 12px 0px 0px 12px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 #wireplumber {
-  border-radius: 0px 12px 12px 0px;
-  margin-right: 4px;
-  margin-left: -4px; /* needed to hide gap (omega scuffed) */
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 8px;
 }
 
 #custom-logo {
@@ -90,8 +98,8 @@ window#waybar.hidden {
 }
 
 #clock {
-  background-color: rgba(28, 29, 45, 0.94); 
-  border-radius: 12px;
+  background-color: rgba(28, 29, 45, 0.80);
+  border-radius: 8px;
   padding: 6px 13px;
   margin: 4px;
   font-family: JetBrainsMono Nerd Font;
@@ -100,6 +108,14 @@ window#waybar.hidden {
 
 tooltip, tooltip label {
   padding: 0px;
-  background-color: rgba(28, 29, 45, 0.94); 
+  background-color: rgba(28, 29, 45, 0.80);
+}
+
+#mpris {
+  border-radius: 8px;
+  margin: 4px 4px;
+  padding: 6px 10px;
+  color: #1ed760;
+  background-color: rgba(28, 29, 45, 0.80);
 }
 
