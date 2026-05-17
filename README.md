@@ -1,25 +1,24 @@
-Latest design (Dock Layout):
-<img width="1354" height="500" alt="image" src="https://github.com/user-attachments/assets/81aa56ed-7f9c-4377-a9bb-afa633990848" />
+### Dock Bar:
+![dock layout](assets/dock.png)
 
-Spotify module (left click - previous song)  •  (middle click - pause/play)  •  (right click - next):
-<img width="581" height="96" alt="2026-05-05_08-19-01" src="https://github.com/user-attachments/assets/537a929b-8df3-4dd6-942a-a5ed04dce89a" />
+### Full Bar:
+![full bar layout](assets/full.png)
 
+### Preview:<br />
+<video src="assets/preview.mp4" controls width="700"></video>
 
-Latest design (Full Bar Layout):
-<img width="1919" height="498" alt="image" src="https://github.com/user-attachments/assets/5100a2a5-fcf7-44cb-8222-1696437e47cb" />
-
-
-Old design - latest functionality:
-
-https://github.com/user-attachments/assets/9462c595-746c-4f70-b053-d409477041c3
-
-Waybar Layout Selector: (( update the paths in scripts/waybar-selector.sh to match your system ))
+Waybar Layout Selector: << update the paths in scripts/waybar-selector.sh to match your system >>
 
 > [!TIP] 
-hyprland bind + windowrule recommeneded for waybar-selector tool:<br />
-`windowrule = match:initial_class waybar-selector, float on, center on, size 460 140`<br />
-`bind = $mainMod SHIFT, B, exec, ~/.config/waybar/scripts/waybar-selector.sh`
+The hyprland bind + windowrule below are recommended for waybar-selector tool:
+```lua
+hl.window_rule({ match = { initial_class = "waybar-selector" }, float = true, center = true, size = { 460, 140 } })
+```
+```lua
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("~/.config/waybar/scripts/waybar-selector.sh"))`
+```
 
-
-https://github.com/user-attachments/assets/afc11809-f3f7-4d36-88f9-8c212453279d
+### Spotify module:
+[left click ~ previous song] &nbsp; • &nbsp;  [middle click - pause/play] &nbsp; • &nbsp;  [right click - next]
+<img width="581" height="96" alt="2026-05-05_08-19-01" src="https://github.com/user-attachments/assets/537a929b-8df3-4dd6-942a-a5ed04dce89a" />
 
