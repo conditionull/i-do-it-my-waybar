@@ -5,7 +5,7 @@
 ![full bar layout](assets/full.png)
 
 ### Preview:<br />
-<video src="assets/preview.mp4" controls width="700"></video>
+![Preview](assets/preview.gif)
 
 Waybar Layout Selector: << update the paths in scripts/waybar-selector.sh to match your system >>
 
