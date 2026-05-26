@@ -44,7 +44,8 @@ window#waybar.hidden {
 #cpu,
 #wireplumber,
 #memory,
-#tray {
+#tray,
+#custom-weather {
   border-radius: 0px;
   margin: 4px 0px;
   padding: 6px 10px;
@@ -62,6 +63,14 @@ window#waybar.hidden {
   font-size: 12.5px;
 }
 
+#custom-weather {
+  color: #8be9fd;
+}
+
+#custom-weather.hidden {
+  padding: 6px 8px;
+}
+
 #wireplumber {
   border-radius: 0px 14px 14px 0px;
   padding: 6px 15px 6px 10px;
@@ -76,9 +85,15 @@ window#waybar.hidden {
   color: #e5f7fc;
 }
 
-tooltip, tooltip label {
-  padding: 0px;
+tooltip {
+  border-radius: 10px;
+  border: 1px solid rgba(139, 233, 253, 0.22);
   background-color: rgba(28, 29, 45, 0.80);
+}
+
+tooltip label {
+  padding: 6px 9px;
+  color: #e5f7fc;
 }
 
 #mpris {
@@ -88,4 +103,3 @@ tooltip, tooltip label {
   color: #1ed760;
   background-color: rgba(28, 29, 45, 0.80);
 }
-

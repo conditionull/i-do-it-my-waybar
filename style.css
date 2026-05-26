@@ -59,7 +59,8 @@ window#waybar.hidden {
 #wireplumber,
 #backlight,
 #memory,
-#tray {
+#tray,
+#custom-weather {
   border-radius: 0px;
   margin: 4px 0px;
   padding: 6px 10px;
@@ -76,6 +77,15 @@ window#waybar.hidden {
   background-color: rgba(28, 29, 45, 0.80);
   font-weight: 600;
   font-size: 12.5px;
+}
+
+#custom-weather {
+  color: #8be9fd;
+}
+
+#custom-weather.hidden {
+  min-width: 0;
+  padding: 6px 8px;
 }
 
 /* overrides radius set above for raounded seamless bar illusion */
@@ -106,9 +116,15 @@ window#waybar.hidden {
   color: #e5f7fc;
 }
 
-tooltip, tooltip label {
-  padding: 0px;
+tooltip {
+  border-radius: 10px;
+  border: 1px solid rgba(139, 233, 253, 0.22);
   background-color: rgba(28, 29, 45, 0.80);
+}
+
+tooltip label {
+  padding: 6px 9px;
+  color: #e5f7fc;
 }
 
 #mpris {
@@ -118,4 +134,3 @@ tooltip, tooltip label {
   color: #1ed760;
   background-color: rgba(28, 29, 45, 0.80);
 }
-
