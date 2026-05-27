@@ -24,3 +24,11 @@ hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("~/.config/waybar/scripts/way
 
 ### Weather module (Click to toggle on/off):
 ![weather module](assets/weather.png)
+
+The script uses your approximate IP-based location only to fetch the forecast. It does not show the resolved location in the module output.
+
+Optional variables for `weather.sh`:
+- `WEATHER_LATITUDE` and `WEATHER_LONGITUDE` to override IP lookup with fixed coordinates
+- `WEATHER_LOCATION="Austin, Texas"` to geocode a fixed place name through Open-Meteo instead
+- `WEATHER_COUNTRY_CODE=US` to constrain geocoding results
+- `WEATHER_DISPLAY_UNIT=celsius` to show Celsius in the bar instead of the default Fahrenheit

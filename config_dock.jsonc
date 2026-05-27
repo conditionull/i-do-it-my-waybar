@@ -14,6 +14,7 @@
     "custom/weather",
     "memory",
     "cpu",
+    "custom/gpu_temp",
     "wireplumber"
   ],
   "wlr/taskbar": {
@@ -51,6 +52,13 @@
     "interval": 5,
     "format": " {}%",
     "max-length": 10
+  },
+  "custom/gpu_temp": {
+    "exec": "$HOME/.config/waybar/scripts/gpu-temp.sh",
+    "interval": 5,
+    "return-type": "json",
+    "format": "{text}",
+    "tooltip": true
   },
   "tray": {
     "icon-size": 18,
