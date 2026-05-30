@@ -48,7 +48,7 @@
     "persistent-workspaces": {}
   },
   "memory": {
-    "interval": 5,
+    "interval": 10,
     "format": " {}%",
     "max-length": 10
   },
@@ -59,7 +59,7 @@
   },
   "custom/gpu_temp": {
     "exec": "$HOME/.config/waybar/scripts/gpu-temp.sh",
-    "interval": 5,
+    "interval": 10,
     "return-type": "json",
     "format": "{text}",
     "tooltip": true
