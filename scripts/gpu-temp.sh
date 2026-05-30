@@ -31,6 +31,7 @@ read_nvidia_temp() {
     return 1
   fi
 
+  # if we detected an NVIDIA mismatch this boot, don't even try to run nvidia-smi again
   if nvidia_mismatch_disabled; then
     return 1
   fi
@@ -91,7 +92,7 @@ read_hwmon_temp() {
 
 temp="$(read_nvidia_temp || read_hwmon_temp || true)"
 
-# if no version mismatch is found, fetch GPU temp (avoids unnecessary calls, -Syu or yay updates are the usual culprits for a temporary mismatch until reboot)
+# show reboot hint if read_nvidia_temp detected an NVIDIA mismatch this boot. Mismatches usually occur after a 'yay' or 'pacman -Syu' update
 if nvidia_mismatch_disabled; then
   printf '{"text":"","tooltip":"NVIDIA driver version mismatch; reboot to reload driver"}\n'
 elif [ -n "$temp" ]; then
