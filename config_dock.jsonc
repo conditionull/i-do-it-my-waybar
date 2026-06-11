@@ -11,7 +11,6 @@
     "hyprland/workspaces",
     "custom/recording_status",
     "tray",
-    "custom/weather",
     "memory",
     "cpu",
     "custom/gpu_temp",
@@ -104,15 +103,6 @@
     "on-click-middle": "playerctl -p spotify play-pause",
     "on-scroll-up": "playerctl -p spotify volume 0.05+",
     "on-scroll-down": "playerctl -p spotify volume 0.05-"
-  },
-  "custom/weather": {
-    "exec": "$HOME/.config/waybar/scripts/weather.sh",
-    "interval": 600,
-    "return-type": "json",
-    "signal": 9,
-    "format": "{text}",
-    "tooltip": true,
-    "on-click": "$HOME/.config/waybar/scripts/weather-toggle.sh"
   },
   "custom/recording_status": {
     "exec": "recording_status.sh",

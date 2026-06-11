@@ -22,13 +22,3 @@ hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("~/.config/waybar/scripts/way
 [left click ~ previous song] &nbsp; • &nbsp;  [middle click - pause/play] &nbsp; • &nbsp;  [right click - next]
 <img width="581" height="96" alt="2026-05-05_08-19-01" src="https://github.com/user-attachments/assets/537a929b-8df3-4dd6-942a-a5ed04dce89a" />
 
-### Weather module (Click to toggle on/off):
-![weather module](assets/weather.png)
-
-The script uses your approximate IP-based location only to fetch the forecast. It does not show the resolved location in the module output.
-
-Optional variables for `weather.sh`:
-- `WEATHER_LATITUDE` and `WEATHER_LONGITUDE` to override IP lookup with fixed coordinates
-- `WEATHER_LOCATION="Austin, Texas"` to geocode a fixed place name through Open-Meteo instead
-- `WEATHER_COUNTRY_CODE=US` to constrain geocoding results
-- `WEATHER_DISPLAY_UNIT=celsius` to show Celsius in the bar instead of the default Fahrenheit

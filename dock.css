@@ -45,8 +45,7 @@ window#waybar.hidden {
 #custom-gpu_temp,
 #wireplumber,
 #memory,
-#tray,
-#custom-weather {
+#tray {
   border-radius: 0px;
   margin: 4px 0px;
   padding: 6px 10px;
@@ -64,16 +63,8 @@ window#waybar.hidden {
   font-size: 12.5px;
 }
 
-#custom-weather {
-  color: #8be9fd;
-}
-
 #custom-gpu_temp {
   color: #ffdd6f;
-}
-
-#custom-weather.hidden {
-  padding: 6px 8px;
 }
 
 #wireplumber {

@@ -18,7 +18,6 @@
     "custom/gpu_temp",
     "custom/recording_status",
     "tray",
-    "custom/weather",
     "wireplumber"
   ],
   "wlr/taskbar": {
@@ -91,14 +90,6 @@
     },
     "on-click": "pavucontrol",
     "scroll-step": 1
-  },
-  "custom/weather": {
-    "exec": "$HOME/.config/waybar/scripts/weather.sh",
-    "interval": 600,
-    "return-type": "json",
-    "signal": 9,
-    "format": "{text}",
-    "on-click": "$HOME/.config/waybar/scripts/weather-toggle.sh"
   },
   "custom/logo": {
     "format": "  ",
